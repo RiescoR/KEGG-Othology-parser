@@ -1,7 +1,7 @@
 # KEGG-Othology-parser
-Working with genome annotations, at some point you will probably face a long list of KO numbers, and you may want the entire KEGG hirarchy on your annotations (for multiple downstream analysis). The first thing you may think is "Ok, if I have a table with all the hierachical KEGG orthology, I would be able to merge my annotations with this table". But the real world is never so easy, and simple tables compiling hierarchichal information are not so easy to come by. This script helps to parse one the formats available in KEGG to parse the entire orthology into a simple tabular form. 
+When working with genome annotations, you'll likely encounter a long list of KO numbers. In such cases, you might want to include the entire KEGG hierarchy in your annotations for various downstream analyses. Your first thought might be, "If I had a table with the complete hierarchical KEGG orthology, I could simply merge my annotations with it." However, reality and imagination do not always meet face to face. You will find it's not that straightforward to compile hierarchical information formats into simple and readable tables. This script helps parse one of the available KEGG formats, converting the entire orthology into a simple tabular form, preserving the hierachical information in a readable form.
 
-To simplify the code, no paralellization has been included, so the script takes a couple of minutes to run a full KEGG orthology. It creates a a table with the following columns
+The script creates a a table with the following columns
   * Class1: First KEGG supercategory (Metabolism, Genetic Information Processing, Environmental Information Processing, etc.)
   * Class2: Second KEGG supercategory (Carbohydrate metabolism, Energy metabolism, etc)
   * Class3: Third KEGG supergategory, equivalent to pathway for KO codes
@@ -12,7 +12,7 @@ To simplify the code, no paralellization has been included, so the script takes 
   * Complete_gene_name
   * EC_number: If multiple, separated with a ";"
 
-This script takes the htext (ko0001.kegg) and parses it into a readable tsv file. It outputs a file called KEGG_Orthology_complete.tsv into the folder where the input file is.
+The output is a file called KEGG_Orthology_complete.tsv that will be placed into the folder where the input file is.
 
 ## To parse the entire KEGG orthology to a tab file
   1) Download the htext file from https://www.genome.jp/kegg-bin/get_htext?ko00001
@@ -23,6 +23,7 @@ This script takes the htext (ko0001.kegg) and parses it into a readable tsv file
      
   4) Run the script. A tsv table called "KEGG_Orthology_complete.tsv" should habe been created in the same path as the htext file. 
 
+I’ve included two test files in the repository: a simplified KEGG orthology file (ko00001_test.keg), which is essentially a subset of the entire database, and the full hierarchy downloaded in April 2024 (ko00001.keg). Feel free to test the script using these input files.
 
 
 ## Variables to define in the script
@@ -31,3 +32,6 @@ Define the input_file_path (must be a htext file (.kegg) downloaded from KEGG, s
 ## Dependencies
  * R (with or without R studio, tested for version 4.2.2)
  * data.table (tested for version 1.15.4)
+
+## Contact info
+The script is quite straigthforward to run, but if you face any problems or you need help to adapt the script to your needs, please contact me via email (raul.riescoj@usal.es)
