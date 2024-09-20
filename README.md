@@ -1,5 +1,7 @@
 # KEGG-Othology-parser
-Small R script to parse htext file (.keg) to a tab separated table. To simplify the code, no paralellization has been included, so the script takes a couple of minutes to run a full KEGG orthology. It creates a a table with the following columns
+Working with genome annotations, at some point you will probably face a long list of KO numbers, and you may want the entire KEGG hirarchy on your annotations (for multiple downstream analysis). The first thing you may think is "Ok, if I have a table with all the hierachical KEGG orthology, I would be able to merge my annotations with this table". But the real world is never so easy, and simple tables compiling hierarchichal information are not so easy to come by. This script helps to parse one the formats available in KEGG to parse the entire orthology into a simple tabular form. 
+
+To simplify the code, no paralellization has been included, so the script takes a couple of minutes to run a full KEGG orthology. It creates a a table with the following columns
   * Class1: First KEGG supercategory (Metabolism, Genetic Information Processing, Environmental Information Processing, etc.)
   * Class2: Second KEGG supercategory (Carbohydrate metabolism, Energy metabolism, etc)
   * Class3: Third KEGG supergategory, equivalent to pathway for KO codes
