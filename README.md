@@ -10,7 +10,7 @@ The script generates a table with the following columns:
   * **PathBrite_code**
   * **PATH_or_BRITE**: Indicates whether the annotation is a pathway or part of BRITE
   * **KO_code**
-  * **Abbreviated_gene_name**: Multiple entries separated by a comma (", ")
+  * **Abbreviated_gene_name**: Multiple entries separated by a comma and a space (", ")
   * **Complete_gene_name**
   * **EC_number**: Multiple entries separated by a semicolon (";")
 
