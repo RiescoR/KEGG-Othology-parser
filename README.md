@@ -22,3 +22,7 @@ This script takes the htext (ko0001.kegg) and parses it into a readable tsv file
 
 ## Variables to define in the script
 Define the input_file_path (must be a htext file (.kegg) downloaded from KEGG, see first line of the script)
+
+## Dependencies
+ * R (with or without R studio, tested for version 4.2.2)
+ * data.table (tested for version 1.15.4)
