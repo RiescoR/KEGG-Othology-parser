@@ -15,8 +15,11 @@ This script takes the htext (ko0001.kegg) and parses it into a readable tsv file
 ## To parse the entire KEGG orthology to a tab file
   1) Download the htext file from https://www.genome.jp/kegg-bin/get_htext?ko00001
   2) Define the input_file_path variable in the R script (must be a path pointing to a htext file (.kegg) downloaded from KEGG, see first line of the script)
-     Example: input_file_path <- "C:/Users/user/Desktop/Antrihabitans_trees_ANI_AAI/Genomes/KEGG/kegg_orthology/ko00001.keg"
-  3) Run the script. A tsv table called "KEGG_Orthology_complete.tsv" should habe been created in the same path as the htext file. 
+
+     Example:
+     `input_file_path <- "C:/Users/user/Desktop/Antrihabitans_trees_ANI_AAI/Genomes/KEGG/kegg_orthology/ko00001.keg"`
+     
+  4) Run the script. A tsv table called "KEGG_Orthology_complete.tsv" should habe been created in the same path as the htext file. 
 
 
 
