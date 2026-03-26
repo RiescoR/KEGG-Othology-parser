@@ -49,4 +49,4 @@ I’ve included two test files in the repository: a simplified KEGG orthology fi
 
 ## Contact Information
 
-The script is straightforward to run, but if you encounter any issues or need help adapting the script to your specific needs, feel free to contact me via email: [raul.riescoj@usal.es](mailto:raul.riescoj@usal.es).
+The script is straightforward to run, but if you encounter any issues or need help adapting the script to your specific needs, feel free to contact me via email: [raul.riescoj@uib.es](mailto:raul.riescoj@uib.es).
